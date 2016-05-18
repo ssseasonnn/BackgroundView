@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="MountainView">
+        <attr name="style" format="integer"/>
+        <attr name="android:color"/>
+    </declare-styleable>
+
+    <declare-styleable name="TreeView">
+        <attr name="android:color"/>
+    </declare-styleable>
+</resources>

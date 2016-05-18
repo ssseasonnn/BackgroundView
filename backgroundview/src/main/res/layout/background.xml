@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:mountain="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <app.season.backgroundview.CloudView
+        android:id="@+id/cloud1"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"/>
+
+    <app.season.backgroundview.CloudView
+        android:id="@+id/cloud2"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cloud1"
+        android:visibility="invisible"/>
+
+    <app.season.backgroundview.CloudView
+        android:id="@+id/cloud3"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/textView"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:text="No Missions"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="No saved missions. Create  a new \n mission by tapping the + button"
+        android:textColor="@android:color/black"/>
+
+    <app.season.backgroundview.MountainView
+        android:id="@+id/mountain3"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_above="@+id/tree4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:color="@color/mountain_3"
+        mountain:style="2"/>
+
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/m2_tree_1"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/tree1"
+        android:layout_alignRight="@+id/tree1"
+        android:layout_alignTop="@+id/m2_tree_2"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
+        android:layout_marginTop="8dp"
+        android:color="@color/mountain_2"/>
+
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/m2_tree_2"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/tree2"
+        android:layout_alignRight="@+id/tree2"
+        android:layout_alignTop="@+id/mountain2"
+        android:layout_marginEnd="13dp"
+        android:layout_marginRight="13dp"
+        android:layout_marginTop="5dp"
+        android:color="@color/mountain_2"/>
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/m2_tree_3"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignEnd="@+id/tree3"
+        android:layout_alignRight="@+id/tree3"
+        android:layout_below="@+id/m2_tree_1"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="5dp"
+        android:color="@color/mountain_2"/>
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/m2_tree_4"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignBottom="@+id/m2_tree_2"
+        android:layout_marginBottom="18dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_toLeftOf="@+id/tree4"
+        android:layout_toStartOf="@+id/tree4"
+        android:color="@color/mountain_2"/>
+
+    <app.season.backgroundview.MountainView
+        android:id="@+id/mountain2"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignBottom="@+id/tree4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:color="@color/mountain_2"
+        mountain:style="1"/>
+
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/tree1"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/mountain1"
+        android:layout_marginLeft="38dp"
+        android:layout_marginStart="38dp"
+        android:color="@color/mountain_1"/>
+
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/tree2"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_below="@+id/tree1"
+        android:layout_marginLeft="62dp"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="10dp"
+        android:layout_toEndOf="@+id/tree1"
+        android:layout_toRightOf="@+id/tree1"
+        android:color="@color/mountain_1"/>
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/tree3"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignTop="@+id/mountain1"
+        android:layout_marginLeft="111dp"
+        android:layout_marginStart="111dp"
+        android:layout_marginTop="15dp"
+        android:layout_toEndOf="@+id/tree2"
+        android:layout_toRightOf="@+id/tree2"
+        android:color="@color/mountain_1"/>
+
+    <app.season.backgroundview.TreeView
+        android:id="@+id/tree4"
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/tree2"
+        android:layout_marginEnd="17dp"
+        android:layout_marginRight="17dp"
+        android:layout_marginTop="6dp"
+        android:color="@color/mountain_1"/>
+
+
+    <app.season.backgroundview.MountainView
+        android:id="@+id/mountain1"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:color="@color/mountain_1"
+        mountain:style="0"/>
+
+
+    <app.season.backgroundview.LeafView
+        android:id="@+id/leaf1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cloud1"
+        android:visibility="invisible"/>
+
+    <app.season.backgroundview.LeafView
+        android:id="@+id/leaf2"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/cloud2"
+        android:layout_marginTop="29dp"
+        android:visibility="invisible"/>
+
+    <app.season.backgroundview.LeafView
+        android:id="@+id/leaf3"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@+id/m2_tree_4"
+        android:layout_alignStart="@+id/m2_tree_4"
+        android:layout_centerVertical="true"
+        android:visibility="invisible"/>
+
+    <app.season.backgroundview.LeafView
+        android:id="@+id/leaf4"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/mountain3"
+        android:layout_alignLeft="@+id/m2_tree_4"
+        android:layout_alignStart="@+id/m2_tree_4"
+        android:visibility="invisible"/>
+
+</RelativeLayout>
